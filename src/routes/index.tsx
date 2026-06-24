@@ -6,6 +6,7 @@ import {
   Sprout, UserPlus, Users, Wand2,
 } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
+import { useReveal } from "@/hooks/use-reveal";
 import { Footer } from "@/components/site/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
