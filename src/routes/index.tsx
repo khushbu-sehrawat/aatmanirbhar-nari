@@ -131,8 +131,10 @@ const faqs = [
 ];
 
 function Landing() {
+  useReveal();
   return (
     <div className="min-h-screen bg-background">
+
       <Toaster richColors />
       <Navbar />
 
@@ -357,10 +359,11 @@ function SectionHeading({
   eyebrow, title, sub, align = "center",
 }: { eyebrow: string; title: string; sub?: string; align?: "center" | "left" }) {
   return (
-    <div className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
+    <div data-reveal className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
       <div className="text-xs font-bold uppercase tracking-widest text-primary">{eyebrow}</div>
       <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{title}</h2>
       {sub && <p className="mt-3 text-muted-foreground">{sub}</p>}
     </div>
   );
 }
+
