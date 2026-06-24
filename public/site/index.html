@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic meta tags for character encoding and responsive scaling -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aatmanirbhar Nari — a platform empowering women entrepreneurs to grow home-based businesses across India." />
+  <title>Aatmanirbhar Nari — Empowering Women, Growing Home Businesses</title>
+
+  <!-- Google Font for a modern, friendly look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons (social media, UI icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Our own stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       LOADING SCREEN
+       Shown briefly when the page first opens; hidden by JS.
+       ========================================================= -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__ring"></div>
+    <p class="loader__text">Aatmanirbhar Nari</p>
+  </div>
+
+  <!-- =========================================================
+       NAVIGATION BAR
+       Sticky bar that shrinks when the user scrolls down.
+       Includes a hamburger menu for mobile.
+       ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand">
+        <span class="nav__logo"><i class="fa-solid fa-sparkles"></i></span>
+        <span class="nav__title">Aatmanirbhar Nari</span>
+      </a>
+
+      <nav>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#stats">Impact</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       HERO SECTION
+       Attractive intro with headline, sub-text, CTAs, and image.
+       ========================================================= -->
+  <section class="hero" id="home">
+    <!-- Soft blurred shapes for a premium feel -->
+    <div class="hero__blob hero__blob--one"></div>
+    <div class="hero__blob hero__blob--two"></div>
+
+    <div class="container hero__grid">
+      <div class="hero__text reveal">
+        <span class="badge"><i class="fa-solid fa-heart"></i> Made for women entrepreneurs</span>
+        <h1>Empowering Women.<br /><span class="gradient-text">Growing Home Businesses.</span></h1>
+        <p>
+          List your home business, reach trusted customers, and grow with simple tools —
+          all in one warm, welcoming place built for Indian women.
+        </p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#gallery" class="btn btn--ghost">See Stories</a>
+        </div>
+      </div>
+
+      <div class="hero__image reveal">
+        <div class="hero__image-glow"></div>
+        <img src="assets/images/hero.jpg" alt="Illustration of three Indian women entrepreneurs" />
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT / FEATURES SECTION
+       Three feature cards with hover lift animation.
+       ========================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>A complete home for your home business</h2>
+        <p>From listing to learning to growth — everything in one simple platform.</p>
+      </div>
+
+      <div class="features">
+        <article class="feature-card reveal">
+          <div class="feature-card__icon"><i class="fa-solid fa-store"></i></div>
+          <h3>List Your Business</h3>
+          <p>Create a beautiful business profile in minutes — share photos, services and timings.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Learn & Grow</h3>
+          <p>Free guides, videos and tips on marketing, pricing, packaging and customer service.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3>Government Schemes</h3>
+          <p>Discover funding and support schemes you may qualify for as a woman entrepreneur.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       STATS / COUNTERS SECTION
+       Numbers animate from 0 to target when scrolled into view.
+       ========================================================= -->
+  <section class="stats" id="stats">
+    <div class="container stats__grid">
+      <div class="stat reveal">
+        <div class="stat__num" data-target="10000">0</div>
+        <div class="stat__label">Women Empowered</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-target="5000">0</div>
+        <div class="stat__label">Businesses Listed</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-target="50">0</div>
+        <div class="stat__label">Cities Covered</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-target="98">0</div>
+        <div class="stat__label">Satisfaction %</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       GALLERY SECTION
+       Image grid with hover zoom + overlay caption.
+       ========================================================= -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Gallery</span>
+        <h2>Beautiful work, real businesses</h2>
+        <p>A small glimpse of products crafted by women on our platform.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item reveal">
+          <img src="assets/images/gallery-1.jpg" alt="Home-cooked tiffin meal" />
+          <figcaption>Tiffin Services</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="assets/images/gallery-2.jpg" alt="Embroidery and tailoring" />
+          <figcaption>Tailoring & Embroidery</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="assets/images/gallery-3.jpg" alt="Handmade jewellery" />
+          <figcaption>Handmade Jewellery</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="assets/images/gallery-4.jpg" alt="Home bakery cupcakes" />
+          <figcaption>Home Bakery</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FAQ SECTION
+       Accordion: click a question to toggle its answer.
+       ========================================================= -->
+  <section class="section section--soft" id="faq">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq__item reveal">
+          <button class="faq__q">
+            Is Aatmanirbhar Nari free to use?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq__a"><p>Yes! Listing your business and browsing services is completely free.</p></div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q">
+            Who can list a business here?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq__a"><p>Any woman entrepreneur running or planning to start a home-based business in India.</p></div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q">
+            How do customers contact me?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq__a"><p>They can reach you through the inquiry form on your profile or via the WhatsApp button.</p></div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q">
+            Do I get help with marketing?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq__a"><p>Yes — our learning section has free guides, poster templates and growth tips.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT FORM SECTION
+       Validated entirely in JavaScript — no backend.
+       ========================================================= -->
+  <section class="section" id="contact">
+    <div class="container contact__grid">
+      <div class="reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's talk about your business</h2>
+        <p>Tell us what you do — we'll help you list it and reach the right customers.</p>
+        <ul class="contact__info">
+          <li><i class="fa-solid fa-envelope"></i> hello@aatmanirbharnari.in</li>
+          <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fa-solid fa-location-dot"></i> New Delhi, India</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your business..."></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block">Send Message</button>
+        <p class="form__success" id="formSuccess" hidden>✨ Thank you! Your message has been received.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+       Brand, quick links, and social media icons.
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h3 class="footer__brand">Aatmanirbhar Nari</h3>
+        <p>Empowering women. Growing home businesses across India.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__bottom">© <span id="year"></span> Aatmanirbhar Nari. Made with <i class="fa-solid fa-heart"></i> in India.</p>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="toTop" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Our JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
